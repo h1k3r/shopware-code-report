@@ -1,0 +1,1 @@
+# shopware phpmetrics code report
