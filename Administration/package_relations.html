@@ -49,7 +49,7 @@
 <div class="page">
     <div class="content content-first">
         <div class="report-details">
-            Created at 2024-10-21 14:22:24        , with PHPMetrics v2.8.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2024-10-22 11:14:45        , with PHPMetrics v2.8.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
                 <div class="content-full group-tabs">
@@ -72,6 +72,12 @@
                     </li>
                                     <li class=" ">
                         <a href="../Migration/index.html">Migration</a>
+                    </li>
+                                    <li class=" ">
+                        <a href="../Commercial/index.html">Commercial</a>
+                    </li>
+                                    <li class=" ">
+                        <a href="../Rufus/index.html">Rufus</a>
                     </li>
                             </ul>
         </div>
@@ -116,7 +122,7 @@
                             <path d="M0 0h24v24H0z" fill="none">
                             <path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z">
                         </svg>
-                        Violations (6)
+                        Violations (4)
                     </a>
                 </li>
                                                 <li>
@@ -270,7 +276,6 @@
             "Shopware\\Core\\Framework",
             "Symfony\\Component\\DependencyInjection",
             "Symfony\\Component\\Config",
-            "Symfony\\Component\\DependencyInjection\\Loader",
             "Shopware\\Administration\\DependencyInjection"
         ]
     },
@@ -290,37 +295,20 @@
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\DependencyInjection\\Loader",
-        "size": 3000,
-        "relations": []
-    },
-    {
         "name": "Shopware\\Administration\\DependencyInjection",
         "size": 3000,
         "relations": [
-            "Symfony\\Component\\DependencyInjection\\Compiler",
             "Symfony\\Component\\DependencyInjection"
         ]
     },
     {
-        "name": "Shopware\\Administration\\Framework\\Search",
+        "name": "Shopware\\Administration\\Framework",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\Struct"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Struct",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Administration\\Framework\\Routing\\NotFound",
-        "size": 3000,
-        "relations": [
+            "Shopware\\Core\\Framework",
             "Symfony\\Component\\EventDispatcher",
             "Psr\\Container",
-            "Symfony\\Component\\HttpKernel\\Event",
+            "Symfony\\Component\\HttpKernel",
             "Symfony\\Component\\HttpFoundation"
         ]
     },
@@ -335,7 +323,7 @@
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\HttpKernel\\Event",
+        "name": "Symfony\\Component\\HttpKernel",
         "size": 3000,
         "relations": []
     },
@@ -345,132 +333,13 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Administration\\Framework\\Routing\\KnownIps",
-        "size": 3000,
-        "relations": [
-            "Symfony\\Component\\HttpFoundation"
-        ]
-    },
-    {
-        "name": "Shopware\\Administration\\Framework\\Routing",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Routing",
-            "Symfony\\Component\\HttpFoundation"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Routing",
-        "size": 3000,
-        "relations": []
-    },
-    {
         "name": "Shopware\\Administration\\Notification",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Framework",
-            "Shopware\\Core\\Framework\\Api\\Context\\Exception",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Filter",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Sorting",
-            "Shopware\\Core\\Framework\\Api\\Context",
-            "Shopware\\Core\\System\\Integration",
-            "Shopware\\Core\\System\\User",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\EntityProtection",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Field",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Field\\Flag"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Api\\Context\\Exception",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Filter",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Sorting",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Api\\Context",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\Integration",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\User",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\EntityProtection",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Field",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Field\\Flag",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Administration\\Notification\\Extension",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Field"
-        ]
-    },
-    {
-        "name": "Shopware\\Administration\\Notification\\Subscriber",
-        "size": 3000,
-        "relations": [
-            "Symfony\\Component\\EventDispatcher",
-            "Shopware\\Administration\\Notification",
-            "Shopware\\Core\\Framework\\Update\\Event",
-            "Shopware\\Core\\Framework\\Uuid"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Update\\Event",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Uuid",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Administration\\Notification\\Exception",
-        "size": 3000,
-        "relations": [
             "global",
-            "Shopware\\Core\\Framework"
+            "Shopware\\Core\\Framework",
+            "Shopware\\Core\\System",
+            "Symfony\\Component\\EventDispatcher"
         ]
     },
     {
@@ -479,24 +348,20 @@
         "relations": []
     },
     {
+        "name": "Shopware\\Core\\System",
+        "size": 3000,
+        "relations": []
+    },
+    {
         "name": "Shopware\\Administration\\Snippet",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Field",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Field\\Flag",
             "Shopware\\Core\\Framework",
             "Shopware\\Core",
             "Doctrine\\DBAL",
             "Symfony\\Component\\Finder",
-            "Shopware\\Core\\Framework\\Util",
-            "Symfony\\Component\\Cache\\Adapter",
-            "Shopware\\Core\\Framework\\Adapter\\Cache",
-            "Shopware\\Core\\Framework\\App",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Filter",
-            "Shopware\\Core\\System\\Locale",
-            "Shopware\\Core\\Framework\\Uuid"
+            "Symfony\\Component\\Cache",
+            "Shopware\\Core\\System"
         ]
     },
     {
@@ -515,27 +380,7 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Framework\\Util",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Cache\\Adapter",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Adapter\\Cache",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\App",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\Locale",
+        "name": "Symfony\\Component\\Cache",
         "size": 3000,
         "relations": []
     },
@@ -543,83 +388,29 @@
         "name": "Shopware\\Administration\\Controller",
         "size": 3000,
         "relations": [
-            "Symfony\\Bundle\\FrameworkBundle\\Controller",
-            "Shopware\\Core\\System\\Tag\\Service",
+            "Symfony\\Bundle\\FrameworkBundle",
+            "Shopware\\Core\\System",
             "Symfony\\Component\\HttpFoundation",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
             "Shopware\\Core\\Framework",
-            "Shopware\\Core\\Framework\\RateLimiter",
             "Shopware\\Administration\\Notification",
-            "Shopware\\Core\\Framework\\Routing",
-            "Shopware\\Core\\Framework\\Api\\Context\\Exception",
-            "Shopware\\Administration\\Notification\\Exception",
-            "Shopware\\Core\\Framework\\Uuid",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
             "Doctrine\\DBAL",
-            "Shopware\\Core\\System\\User\\Aggregate\\UserConfig",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Filter",
-            "Shopware\\Core\\Framework\\Api\\Controller\\Exception",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine",
-            "Shopware\\Core\\Framework\\Util",
             "global",
             "Shopware\\Administration\\Dashboard",
-            "Shopware\\Core\\Framework\\App\\ActionButton",
-            "Shopware\\Core\\Framework\\App\\Payload",
-            "Shopware\\Core\\Framework\\App\\Hmac",
-            "Shopware\\Core\\Framework\\Validation\\DataBag",
-            "Shopware\\Administration\\Controller\\Exception",
-            "Shopware\\Core\\Framework\\App\\Manifest\\Exception",
             "Shopware\\Administration\\Service",
-            "Symfony\\Component\\Serializer\\Encoder",
-            "Shopware\\Core\\Framework\\Api\\Acl",
-            "Shopware\\Core\\Framework\\Api\\Serializer",
-            "Shopware\\Core\\Framework\\Api\\Exception",
-            "Shopware\\Administration\\Framework\\Search",
-            "Shopware\\Core\\Content\\Product",
-            "Shopware\\Core\\System\\SalesChannel\\Entity",
-            "Shopware\\Core\\System\\SalesChannel\\Context",
-            "Shopware\\Core\\Content\\Product\\SalesChannel",
-            "Shopware\\Core\\Framework\\Adapter\\Twig",
-            "Shopware\\Core\\Framework\\Store\\Services",
+            "Symfony\\Component\\Serializer",
+            "Shopware\\Administration\\Framework",
+            "Shopware\\Core\\Content",
             "Shopware\\Administration\\Snippet",
-            "Shopware\\Administration\\Framework\\Routing\\KnownIps",
             "Symfony\\Contracts\\EventDispatcher",
-            "Symfony\\Component\\DependencyInjection\\ParameterBag",
-            "Shopware\\Core\\System\\SystemConfig",
+            "Symfony\\Component\\DependencyInjection",
             "League\\Flysystem",
-            "Shopware\\Core\\DevOps\\Environment",
+            "Shopware\\Core\\DevOps",
             "Shopware\\Administration\\Events",
-            "Symfony\\Component\\Validator",
-            "Shopware\\Core\\Framework\\Validation\\Exception"
+            "Symfony\\Component\\Validator"
         ]
     },
     {
-        "name": "Symfony\\Bundle\\FrameworkBundle\\Controller",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\Tag\\Service",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\RateLimiter",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\User\\Aggregate\\UserConfig",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Api\\Controller\\Exception",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine",
+        "name": "Symfony\\Bundle\\FrameworkBundle",
         "size": 3000,
         "relations": []
     },
@@ -628,99 +419,25 @@
         "size": 3000,
         "relations": [
             "Doctrine\\DBAL",
-            "Shopware\\Core\\Checkout\\Cart\\Price",
-            "Shopware\\Core\\Framework",
-            "Shopware\\Core\\Framework\\Uuid"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\App\\ActionButton",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\App\\Payload",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\App\\Hmac",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Validation\\DataBag",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Administration\\Controller\\Exception",
-        "size": 3000,
-        "relations": [
+            "Shopware\\Core\\Checkout",
             "Shopware\\Core\\Framework"
         ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\App\\Manifest\\Exception",
-        "size": 3000,
-        "relations": []
     },
     {
         "name": "Shopware\\Administration\\Service",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Administration\\Framework\\Search",
-            "Shopware\\Core\\Framework"
+            "Shopware\\Core\\Framework",
+            "Shopware\\Administration\\Framework"
         ]
     },
     {
-        "name": "Symfony\\Component\\Serializer\\Encoder",
+        "name": "Symfony\\Component\\Serializer",
         "size": 3000,
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Framework\\Api\\Acl",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Api\\Serializer",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Api\\Exception",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Content\\Product",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\SalesChannel\\Entity",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\SalesChannel\\Context",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Content\\Product\\SalesChannel",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Adapter\\Twig",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Store\\Services",
+        "name": "Shopware\\Core\\Content",
         "size": 3000,
         "relations": []
     },
@@ -730,22 +447,12 @@
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\DependencyInjection\\ParameterBag",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\SystemConfig",
-        "size": 3000,
-        "relations": []
-    },
-    {
         "name": "League\\Flysystem",
         "size": 3000,
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\DevOps\\Environment",
+        "name": "Shopware\\Core\\DevOps",
         "size": 3000,
         "relations": []
     },
@@ -754,7 +461,6 @@
         "size": 3000,
         "relations": [
             "Symfony\\Contracts\\EventDispatcher",
-            "Shopware\\Core\\Framework\\Event",
             "Shopware\\Core\\Framework"
         ]
     },
@@ -764,76 +470,32 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Framework\\Validation\\Exception",
+        "name": "Shopware\\Core\\Checkout",
         "size": 3000,
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Checkout\\Cart\\Price",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Administration\\System\\SalesChannel\\Subscriber",
+        "name": "Shopware\\Administration\\System",
         "size": 3000,
         "relations": [
             "Symfony\\Component\\EventDispatcher",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Event",
-            "Shopware\\Core\\System\\User\\Aggregate\\UserConfig",
             "Shopware\\Core\\Framework",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Filter"
+            "Shopware\\Core\\System"
         ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Event",
-        "size": 3000,
-        "relations": []
     },
     {
         "name": "Shopware\\Administration\\Command",
         "size": 3000,
         "relations": [
-            "Symfony\\Component\\Console\\Command",
-            "Symfony\\Component\\Console\\Input",
-            "Symfony\\Component\\Console\\Output",
-            "Symfony\\Component\\Console\\Question",
+            "Symfony\\Component\\Console",
             "global",
-            "Symfony\\Component\\Console\\Helper",
             "Symfony\\Component\\Finder",
             "Symfony\\Component\\HttpKernel",
-            "Symfony\\Component\\Filesystem",
-            "Symfony\\Component\\Console\\Style"
+            "Symfony\\Component\\Filesystem"
         ]
     },
     {
-        "name": "Symfony\\Component\\Console\\Command",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Console\\Input",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Console\\Output",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Console\\Question",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Console\\Helper",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\HttpKernel",
+        "name": "Symfony\\Component\\Console",
         "size": 3000,
         "relations": []
     },
@@ -843,44 +505,48 @@
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\Console\\Style",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Event",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\DependencyInjection\\Compiler",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Administration\\Migration\\V6_6",
+        "name": "Shopware\\Administration\\Migration",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Migration",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Administration\\Migration\\V6_4",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
+            "Shopware\\Core\\Framework",
             "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\Uuid",
             "global"
         ]
     }
 ];
+
+
+    // Function to check if a string starts with any of the given prefixes
+    const disallowedPrefixes = [
+        'Symfony\\',
+        'Doctrine\\',
+        'Twig\\',
+        'global',
+    ];
+    const allowedPrefixes = [
+        'Swag\\',
+        'Shopware\\',
+    ];
+    var allowedString = function (s){
+        // return !disallowedPrefixes.some(prefix => s.startsWith(prefix));
+        return allowedPrefixes.some(prefix => s.startsWith(prefix));
+    }
+
+    function filterNodesByPrefixes(nodes) {
+        return nodes.filter(node => {
+            // Exclude not allowed names
+            if (!allowedString(node.name)) {
+                return false;
+            }
+
+            // Filter out relations that are not allowed
+            node.relations = node.relations.filter(relation => allowedString(relation));
+
+            return true; // Keep the node if its name doesn't match any prefix
+        });
+    }
+
+    relations = filterNodesByPrefixes(relations);
 
     /**
      * Thanks to http://bl.ocks.org/mbostock/raw/7607999/

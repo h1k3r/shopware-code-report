@@ -49,7 +49,7 @@
 <div class="page">
     <div class="content content-first">
         <div class="report-details">
-            Created at 2024-10-21 14:22:24        , with PHPMetrics v2.8.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2024-10-22 11:14:45        , with PHPMetrics v2.8.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
                 <div class="content-full group-tabs">
@@ -72,6 +72,12 @@
                     </li>
                                     <li class="active ">
                         <a href="../Migration/index.html">Migration</a>
+                    </li>
+                                    <li class=" ">
+                        <a href="../Commercial/index.html">Commercial</a>
+                    </li>
+                                    <li class=" ">
+                        <a href="../Rufus/index.html">Rufus</a>
                     </li>
                             </ul>
         </div>
@@ -116,7 +122,7 @@
                             <path d="M0 0h24v24H0z" fill="none">
                             <path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z">
                         </svg>
-                        Violations (70)
+                        Violations (65)
                     </a>
                 </li>
                                                 <li>
@@ -264,48 +270,21 @@
 
     var relations = [
     {
-        "name": "Shopware\\Storefront\\Migration\\V6_5",
+        "name": "Shopware\\Storefront\\Migration",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Migration",
-        "size": 3000,
-        "relations": [
-            "Doctrine\\DBAL",
-            "Psr\\Log",
-            "global",
-            "Doctrine\\DBAL\\Query",
-            "Shopware\\Core\\Framework\\Migration\\Exception",
             "Shopware\\Core\\Framework",
-            "Shopware\\Core\\Framework\\Uuid",
-            "Symfony\\Component\\DependencyInjection\\Compiler",
-            "Symfony\\Component\\DependencyInjection",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine",
-            "Doctrine\\DBAL\\Schema",
-            "Shopware\\Core\\DevOps\\Environment"
-        ]
-    },
-    {
-        "name": "Doctrine\\DBAL",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Storefront\\Migration\\V6_3",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
             "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\Uuid",
             "global"
         ]
     },
     {
-        "name": "Shopware\\Core\\Framework\\Uuid",
+        "name": "Shopware\\Core\\Framework",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "Doctrine\\DBAL",
         "size": 3000,
         "relations": []
     },
@@ -315,194 +294,14 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Storefront\\Migration\\V6_4",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Test\\Migration\\_test_migrations_valid_run_time_exceptions",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL",
-            "global"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Test\\Migration\\_test_migrations_valid",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Test\\Migration",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Shopware\\Core\\Framework\\Test\\TestCaseHelper",
-            "PHPUnit\\Framework",
-            "Symfony\\Component\\DependencyInjection"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Test\\TestCaseHelper",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "PHPUnit\\Framework",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\DependencyInjection",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Test\\Migration\\_test_migrations_valid_run_time",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL"
-        ]
-    },
-    {
-        "name": "Psr\\Log",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Doctrine\\DBAL\\Query",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Migration\\Exception",
+        "name": "Shopware\\Core\\Migration",
         "size": 3000,
         "relations": [
             "Shopware\\Core\\Framework",
-            "global",
-            "Shopware\\Core\\Framework\\Migration"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\DependencyInjection\\Compiler",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Doctrine\\DBAL\\Schema",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\DevOps\\Environment",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Migration\\Command",
-        "size": 3000,
-        "relations": [
-            "global",
-            "Shopware\\Core\\Framework\\Migration",
-            "Symfony\\Component\\Console\\Input",
-            "Symfony\\Component\\Console\\Command",
-            "Symfony\\Component\\Console\\Output",
-            "Symfony\\Component\\Cache\\Adapter",
-            "Shopware\\Core\\Framework\\Adapter\\Console",
-            "Shopware\\Core\\Framework\\Migration\\Exception",
-            "Shopware\\Core\\Framework\\Plugin"
-        ]
-    },
-    {
-        "name": "Symfony\\Component\\Console\\Input",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Console\\Command",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Console\\Output",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Cache\\Adapter",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Adapter\\Console",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Plugin",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Migration\\V6_6",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\Adapter\\Storage",
-            "Shopware\\Core\\Framework\\Uuid",
-            "Shopware\\Core\\Migration\\Traits",
-            "global",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Adapter\\Storage",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Migration\\Traits",
-        "size": 3000,
-        "relations": [
-            "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\Uuid",
-            "global"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Migration\\V6_7",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Migration\\Test",
-        "size": 3000,
-        "relations": [
             "Doctrine\\DBAL",
             "global",
-            "Doctrine\\DBAL\\Platforms"
+            "Doctrine\\DBAL\\Platforms",
+            "Shopware\\Core\\Content"
         ]
     },
     {
@@ -511,100 +310,61 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Migration\\V6_5",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\Uuid",
-            "global",
-            "Shopware\\Core\\Migration\\Traits",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Migration\\V6_3",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\Uuid",
-            "global",
-            "Shopware\\Core\\Migration\\Traits",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine",
-            "Shopware\\Core\\Framework\\Api\\Util"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Api\\Util",
+        "name": "Shopware\\Core\\Content",
         "size": 3000,
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Migration\\V6_4",
+        "name": "Shopware\\Administration\\Migration",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\Migration",
+            "Shopware\\Core\\Framework",
             "Doctrine\\DBAL",
-            "Shopware\\Core\\Migration\\Traits",
-            "Shopware\\Core\\Framework\\Uuid",
-            "global",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine",
-            "Shopware\\Core\\Content\\ProductExport\\ScheduledTask",
-            "Shopware\\Core\\Content\\Flow\\Dispatching\\Action"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Content\\ProductExport\\ScheduledTask",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Content\\Flow\\Dispatching\\Action",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Administration\\Migration\\V6_6",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL"
-        ]
-    },
-    {
-        "name": "Shopware\\Administration\\Migration\\V6_4",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
-            "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\Uuid",
             "global"
         ]
     },
     {
-        "name": "Shopware\\Elasticsearch\\Migration\\Traits",
+        "name": "Shopware\\Elasticsearch\\Migration",
         "size": 3000,
         "relations": [
-            "Doctrine\\DBAL"
-        ]
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Migration\\V6_5",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
             "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal"
+            "Shopware\\Core\\Framework"
         ]
     }
 ];
+
+
+    // Function to check if a string starts with any of the given prefixes
+    const disallowedPrefixes = [
+        'Symfony\\',
+        'Doctrine\\',
+        'Twig\\',
+        'global',
+    ];
+    const allowedPrefixes = [
+        'Swag\\',
+        'Shopware\\',
+    ];
+    var allowedString = function (s){
+        // return !disallowedPrefixes.some(prefix => s.startsWith(prefix));
+        return allowedPrefixes.some(prefix => s.startsWith(prefix));
+    }
+
+    function filterNodesByPrefixes(nodes) {
+        return nodes.filter(node => {
+            // Exclude not allowed names
+            if (!allowedString(node.name)) {
+                return false;
+            }
+
+            // Filter out relations that are not allowed
+            node.relations = node.relations.filter(relation => allowedString(relation));
+
+            return true; // Keep the node if its name doesn't match any prefix
+        });
+    }
+
+    relations = filterNodesByPrefixes(relations);
 
     /**
      * Thanks to http://bl.ocks.org/mbostock/raw/7607999/

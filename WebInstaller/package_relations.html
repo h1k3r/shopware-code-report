@@ -49,7 +49,7 @@
 <div class="page">
     <div class="content content-first">
         <div class="report-details">
-            Created at 2024-10-21 14:22:24        , with PHPMetrics v2.8.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2024-10-22 11:14:45        , with PHPMetrics v2.8.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
                 <div class="content-full group-tabs">
@@ -72,6 +72,12 @@
                     </li>
                                     <li class=" ">
                         <a href="../Migration/index.html">Migration</a>
+                    </li>
+                                    <li class=" ">
+                        <a href="../Commercial/index.html">Commercial</a>
+                    </li>
+                                    <li class=" ">
+                        <a href="../Rufus/index.html">Rufus</a>
                     </li>
                             </ul>
         </div>
@@ -267,13 +273,13 @@
         "name": "Shopware\\WebInstaller\\Listener",
         "size": 3000,
         "relations": [
-            "Symfony\\Component\\HttpKernel\\Event",
+            "Symfony\\Component\\HttpKernel",
             "Symfony\\Component\\HttpFoundation",
             "Symfony\\Component\\Routing"
         ]
     },
     {
-        "name": "Symfony\\Component\\HttpKernel\\Event",
+        "name": "Symfony\\Component\\HttpKernel",
         "size": 3000,
         "relations": []
     },
@@ -296,17 +302,12 @@
             "Symfony\\Bundle\\FrameworkBundle",
             "Symfony\\Bundle\\TwigBundle",
             "Symfony\\Component\\DependencyInjection",
-            "Symfony\\Component\\Config\\Loader",
-            "Symfony\\Component\\Routing\\Loader\\Configurator"
+            "Symfony\\Component\\Config",
+            "Symfony\\Component\\Routing"
         ]
     },
     {
         "name": "global",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\HttpKernel",
         "size": 3000,
         "relations": []
     },
@@ -326,12 +327,7 @@
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\Config\\Loader",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Routing\\Loader\\Configurator",
+        "name": "Symfony\\Component\\Config",
         "size": 3000,
         "relations": []
     },
@@ -339,16 +335,11 @@
         "name": "Shopware\\WebInstaller\\Controller",
         "size": 3000,
         "relations": [
-            "Symfony\\Bundle\\FrameworkBundle\\Controller",
+            "Symfony\\Bundle\\FrameworkBundle",
             "Shopware\\WebInstaller\\Services",
             "Symfony\\Component\\HttpFoundation",
             "Symfony\\Component\\Filesystem"
         ]
-    },
-    {
-        "name": "Symfony\\Bundle\\FrameworkBundle\\Controller",
-        "size": 3000,
-        "relations": []
     },
     {
         "name": "Shopware\\WebInstaller\\Services",
@@ -395,6 +386,39 @@
         "relations": []
     }
 ];
+
+
+    // Function to check if a string starts with any of the given prefixes
+    const disallowedPrefixes = [
+        'Symfony\\',
+        'Doctrine\\',
+        'Twig\\',
+        'global',
+    ];
+    const allowedPrefixes = [
+        'Swag\\',
+        'Shopware\\',
+    ];
+    var allowedString = function (s){
+        // return !disallowedPrefixes.some(prefix => s.startsWith(prefix));
+        return allowedPrefixes.some(prefix => s.startsWith(prefix));
+    }
+
+    function filterNodesByPrefixes(nodes) {
+        return nodes.filter(node => {
+            // Exclude not allowed names
+            if (!allowedString(node.name)) {
+                return false;
+            }
+
+            // Filter out relations that are not allowed
+            node.relations = node.relations.filter(relation => allowedString(relation));
+
+            return true; // Keep the node if its name doesn't match any prefix
+        });
+    }
+
+    relations = filterNodesByPrefixes(relations);
 
     /**
      * Thanks to http://bl.ocks.org/mbostock/raw/7607999/

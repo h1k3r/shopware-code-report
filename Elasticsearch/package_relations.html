@@ -49,7 +49,7 @@
 <div class="page">
     <div class="content content-first">
         <div class="report-details">
-            Created at 2024-10-21 14:22:24        , with PHPMetrics v2.8.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2024-10-22 11:14:45        , with PHPMetrics v2.8.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
                 <div class="content-full group-tabs">
@@ -72,6 +72,12 @@
                     </li>
                                     <li class=" ">
                         <a href="../Migration/index.html">Migration</a>
+                    </li>
+                                    <li class=" ">
+                        <a href="../Commercial/index.html">Commercial</a>
+                    </li>
+                                    <li class=" ">
+                        <a href="../Rufus/index.html">Rufus</a>
                     </li>
                             </ul>
         </div>
@@ -116,7 +122,7 @@
                             <path d="M0 0h24v24H0z" fill="none">
                             <path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z">
                         </svg>
-                        Violations (30)
+                        Violations (26)
                     </a>
                 </li>
                                                 <li>
@@ -272,14 +278,9 @@
             "Shopware\\Elasticsearch\\DependencyInjection",
             "Shopware\\Elasticsearch\\Profiler",
             "Symfony\\Component\\Config",
-            "Symfony\\Component\\DependencyInjection\\Loader",
-            "Symfony\\Component\\Config\\Loader",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\System\\CustomField",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal",
+            "Shopware\\Core\\System",
             "OpenSearchDSL\\Query\\Joining",
             "OpenSearchDSL\\Query\\Compound",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Field",
             "Shopware\\Elasticsearch\\Product",
             "OpenSearchDSL\\Query\\FullText",
             "OpenSearchDSL\\Query\\TermLevel"
@@ -299,24 +300,18 @@
         "name": "Shopware\\Elasticsearch\\DependencyInjection",
         "size": 3000,
         "relations": [
-            "Symfony\\Component\\DependencyInjection\\Compiler",
             "Symfony\\Component\\DependencyInjection",
-            "Symfony\\Component\\Config\\Definition",
-            "Symfony\\Component\\Config\\Definition\\Builder",
-            "Symfony\\Component\\DependencyInjection\\Extension",
-            "Symfony\\Component\\Config",
-            "Symfony\\Component\\DependencyInjection\\Loader"
+            "Symfony\\Component\\Config"
         ]
     },
     {
         "name": "Shopware\\Elasticsearch\\Profiler",
         "size": 3000,
         "relations": [
-            "Symfony\\Component\\DependencyInjection\\Compiler",
             "Symfony\\Component\\DependencyInjection",
             "OpenSearch",
             "OpenSearch\\Connections",
-            "Symfony\\Component\\HttpKernel\\DataCollector",
+            "Symfony\\Component\\HttpKernel",
             "Symfony\\Component\\HttpFoundation"
         ]
     },
@@ -326,27 +321,7 @@
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\DependencyInjection\\Loader",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Config\\Loader",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\CustomField",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal",
+        "name": "Shopware\\Core\\System",
         "size": 3000,
         "relations": []
     },
@@ -361,41 +336,21 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Field",
-        "size": 3000,
-        "relations": []
-    },
-    {
         "name": "Shopware\\Elasticsearch\\Product",
         "size": 3000,
         "relations": [
             "Shopware\\Core\\Framework",
             "OpenSearch\\Common\\Exceptions",
             "Symfony\\Component\\EventDispatcher",
-            "Shopware\\Elasticsearch\\Framework\\Indexing",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Content\\Product\\Events",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\Filter",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term",
-            "Shopware\\Elasticsearch",
-            "Shopware\\Core\\Framework\\Plugin\\Exception",
-            "OpenSearchDSL\\Query\\Compound",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-            "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\Uuid",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine",
             "Shopware\\Elasticsearch\\Framework",
+            "Shopware\\Core\\Content",
+            "Shopware\\Elasticsearch",
+            "OpenSearchDSL\\Query\\Compound",
+            "Doctrine\\DBAL",
             "OpenSearch",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Event",
-            "Shopware\\Core\\System\\Language",
+            "Shopware\\Core\\System",
             "global",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal",
-            "Shopware\\Core\\Content\\Product\\SearchKeyword",
-            "Shopware\\Core\\Content\\Product",
-            "Symfony\\Component\\HttpFoundation",
-            "Shopware\\Core\\System\\SalesChannel",
-            "Shopware\\Core\\Framework\\Routing",
-            "Shopware\\Core\\Content\\Product\\DataAbstractionLayer"
+            "Symfony\\Component\\HttpFoundation"
         ]
     },
     {
@@ -412,60 +367,52 @@
         "name": "Shopware\\Elasticsearch\\Test",
         "size": 3000,
         "relations": [
-            "Symfony\\Component\\Console\\Input",
-            "Symfony\\Component\\Console\\Output",
-            "Shopware\\Elasticsearch\\Framework\\DataAbstractionLayer",
+            "Symfony\\Component\\Console",
+            "Shopware\\Elasticsearch\\Framework",
             "global",
             "Symfony\\Component\\DependencyInjection",
-            "Shopware\\Core\\DevOps\\Environment"
+            "Shopware\\Core\\DevOps"
         ]
     },
     {
-        "name": "Symfony\\Component\\Console\\Input",
+        "name": "Symfony\\Component\\Console",
         "size": 3000,
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\Console\\Output",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Framework\\DataAbstractionLayer",
+        "name": "Shopware\\Elasticsearch\\Framework",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Framework\\Plugin\\Exception",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\AggregationResult",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-            "Shopware\\Core\\Framework",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Aggregation",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\AggregationResult\\Metric",
-            "Shopware\\Elasticsearch",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Aggregation\\Metric",
-            "global",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Aggregation\\Bucket",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\AggregationResult\\Bucket",
-            "Shopware\\Elasticsearch\\Framework",
             "OpenSearch",
-            "Symfony\\Contracts\\EventDispatcher",
-            "Shopware\\Elasticsearch\\Framework\\DataAbstractionLayer\\Event",
-            "OpenSearchDSL",
-            "OpenSearchDSL\\Aggregation",
-            "OpenSearchDSL\\Aggregation\\Metric",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Filter",
-            "OpenSearchDSL\\Aggregation\\Bucketing",
-            "Shopware\\Core\\System\\CustomField",
-            "Shopware\\Core\\Framework\\Uuid",
-            "OpenSearchDSL\\Sort",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Sorting",
-            "Shopware\\Elasticsearch\\Sort",
+            "Shopware\\Core\\Framework",
             "OpenSearchDSL\\Query\\Compound",
+            "OpenSearchDSL\\Aggregation",
+            "Psr\\EventDispatcher",
+            "Shopware\\Core\\System",
+            "Shopware\\Elasticsearch\\Product",
+            "Shopware\\Core\\Maintenance",
+            "Shopware\\Elasticsearch",
+            "global",
+            "Symfony\\Contracts\\EventDispatcher",
+            "OpenSearchDSL",
+            "OpenSearchDSL\\Aggregation\\Metric",
+            "OpenSearchDSL\\Aggregation\\Bucketing",
+            "OpenSearchDSL\\Sort",
+            "Shopware\\Elasticsearch\\Sort",
             "OpenSearchDSL\\Query\\TermLevel",
             "OpenSearchDSL\\Query\\FullText",
             "OpenSearchDSL\\Query\\Joining",
-            "OpenSearchDSL\\Query\\Specialized"
+            "OpenSearchDSL\\Query\\Specialized",
+            "Psr\\Log",
+            "Doctrine\\DBAL",
+            "Symfony\\Component\\EventDispatcher",
+            "Symfony\\Component\\DependencyInjection",
+            "Shopware\\Elasticsearch\\Event",
+            "Symfony\\Component\\Console",
+            "Shopware\\Elasticsearch\\Admin",
+            "Symfony\\Component\\Messenger",
+            "Symfony\\Component\\Stopwatch",
+            "Symfony\\Component\\Finder"
         ]
     },
     {
@@ -474,7 +421,7 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\DevOps\\Environment",
+        "name": "Shopware\\Core\\DevOps",
         "size": 3000,
         "relations": []
     },
@@ -491,44 +438,7 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Elasticsearch\\Framework",
-        "size": 3000,
-        "relations": [
-            "OpenSearch",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Framework",
-            "OpenSearchDSL\\Query\\Compound",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-            "OpenSearchDSL\\Aggregation",
-            "Psr\\EventDispatcher",
-            "Shopware\\Core\\System\\Language",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Filter",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Sorting",
-            "Shopware\\Elasticsearch\\Framework\\Indexing\\Event",
-            "Shopware\\Elasticsearch\\Product",
-            "Shopware\\Core\\Maintenance\\Staging\\Event",
-            "Psr\\Log",
-            "Shopware\\Elasticsearch\\Framework\\DataAbstractionLayer",
-            "global",
-            "Shopware\\Elasticsearch",
-            "OpenSearchDSL",
-            "Doctrine\\DBAL",
-            "Symfony\\Component\\EventDispatcher",
-            "Symfony\\Component\\DependencyInjection\\ParameterBag",
-            "Shopware\\Elasticsearch\\Event",
-            "Shopware\\Core\\Framework\\Adapter\\Storage",
-            "Shopware\\Elasticsearch\\Framework\\Indexing",
-            "Symfony\\Component\\Messenger",
-            "Shopware\\Core\\Framework\\Update\\Event"
-        ]
-    },
-    {
         "name": "OpenSearch",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
         "size": 3000,
         "relations": []
     },
@@ -543,44 +453,37 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\System\\Language",
+        "name": "Shopware\\Core\\Maintenance",
         "size": 3000,
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Filter",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Sorting",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Framework\\Indexing\\Event",
-        "size": 3000,
-        "relations": [
-            "Symfony\\Contracts\\EventDispatcher",
-            "Shopware\\Core\\Framework\\Event",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-            "Shopware\\Core\\Framework",
-            "Shopware\\Elasticsearch\\Framework",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\Common"
-        ]
-    },
-    {
-        "name": "Shopware\\Core\\Maintenance\\Staging\\Event",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Psr\\Log",
+        "name": "Symfony\\Contracts\\EventDispatcher",
         "size": 3000,
         "relations": []
     },
     {
         "name": "OpenSearchDSL",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "OpenSearchDSL\\Aggregation\\Metric",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "OpenSearchDSL\\Aggregation\\Bucketing",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "OpenSearchDSL\\Query\\Specialized",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "Psr\\Log",
         "size": 3000,
         "relations": []
     },
@@ -595,201 +498,31 @@
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\DependencyInjection\\ParameterBag",
-        "size": 3000,
-        "relations": []
-    },
-    {
         "name": "Shopware\\Elasticsearch\\Event",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\Event",
             "Shopware\\Core\\Framework"
         ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Adapter\\Storage",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Framework\\Indexing",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Elasticsearch\\Framework",
-            "OpenSearch",
-            "Shopware\\Core\\Framework",
-            "Shopware\\Elasticsearch\\Product",
-            "Shopware\\Core\\Framework\\MessageQueue\\ScheduledTask",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Psr\\Log",
-            "Doctrine\\DBAL",
-            "Psr\\EventDispatcher",
-            "Shopware\\Elasticsearch\\Framework\\Indexing\\Event",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\Common",
-            "Symfony\\Component\\EventDispatcher",
-            "Shopware\\Elasticsearch",
-            "global",
-            "Symfony\\Component\\Finder",
-            "Shopware\\Core\\Framework\\Uuid",
-            "Shopware\\Core\\Framework\\MessageQueue",
-            "Symfony\\Component\\DependencyInjection\\ParameterBag"
-        ]
-    },
-    {
-        "name": "Symfony\\Component\\Messenger",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Update\\Event",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Plugin\\Exception",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\AggregationResult",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Aggregation",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\AggregationResult\\Metric",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Aggregation\\Metric",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Aggregation\\Bucket",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\AggregationResult\\Bucket",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Contracts\\EventDispatcher",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Framework\\DataAbstractionLayer\\Event",
-        "size": 3000,
-        "relations": [
-            "Symfony\\Contracts\\EventDispatcher",
-            "Shopware\\Core\\Framework\\Event",
-            "OpenSearchDSL",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-            "Shopware\\Core\\Framework",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\AggregationResult"
-        ]
-    },
-    {
-        "name": "OpenSearchDSL\\Aggregation\\Metric",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "OpenSearchDSL\\Aggregation\\Bucketing",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Uuid",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "OpenSearchDSL\\Query\\Specialized",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Event",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Framework\\Command",
-        "size": 3000,
-        "relations": [
-            "Symfony\\Component\\Console\\Command",
-            "OpenSearch",
-            "Symfony\\Component\\Console\\Input",
-            "Symfony\\Component\\Console\\Output",
-            "Shopware\\Core\\Framework\\Adapter\\Console",
-            "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\Increment",
-            "Shopware\\Elasticsearch\\Admin",
-            "Symfony\\Component\\Console\\Style",
-            "Shopware\\Elasticsearch\\Framework\\Indexing",
-            "Shopware\\Core\\Framework",
-            "Shopware\\Elasticsearch\\Framework",
-            "Symfony\\Component\\Messenger",
-            "Symfony\\Component\\Stopwatch",
-            "Symfony\\Component\\Console\\Helper",
-            "Symfony\\Component\\EventDispatcher",
-            "Shopware\\Elasticsearch",
-            "Shopware\\Core\\Framework\\Uuid"
-        ]
-    },
-    {
-        "name": "Symfony\\Component\\Console\\Command",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Adapter\\Console",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Increment",
-        "size": 3000,
-        "relations": []
     },
     {
         "name": "Shopware\\Elasticsearch\\Admin",
         "size": 3000,
         "relations": [
-            "Shopware\\Core\\Framework\\MessageQueue",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Framework\\Api\\Serializer",
-            "Symfony\\Component\\HttpFoundation",
             "Shopware\\Core\\Framework",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
+            "Symfony\\Component\\HttpFoundation",
             "Symfony\\Component\\EventDispatcher",
             "Doctrine\\DBAL",
             "Symfony\\Component\\Messenger",
             "Symfony\\Contracts\\EventDispatcher",
             "OpenSearch",
             "Psr\\Log",
-            "Shopware\\Core\\Framework\\Event",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Event",
-            "Shopware\\Elasticsearch\\Admin\\Indexer",
             "Shopware\\Elasticsearch",
-            "Shopware\\Core\\Framework\\Uuid",
             "OpenSearchDSL",
             "OpenSearchDSL\\Query\\FullText"
         ]
     },
     {
-        "name": "Symfony\\Component\\Console\\Style",
+        "name": "Symfony\\Component\\Messenger",
         "size": 3000,
         "relations": []
     },
@@ -799,32 +532,7 @@
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\Console\\Helper",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\MessageQueue\\ScheduledTask",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\Common",
-        "size": 3000,
-        "relations": []
-    },
-    {
         "name": "Symfony\\Component\\Finder",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\MessageQueue",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Api\\Serializer",
         "size": 3000,
         "relations": []
     },
@@ -834,86 +542,12 @@
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Event",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Admin\\Indexer",
-        "size": 3000,
-        "relations": [
-            "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\Common",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer",
-            "Shopware\\Core\\Framework\\Plugin\\Exception",
-            "Shopware\\Core\\Framework",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search",
-            "Shopware\\Core\\Framework\\Uuid",
-            "OpenSearchDSL",
-            "OpenSearchDSL\\Query\\FullText"
-        ]
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Admin\\Subscriber",
-        "size": 3000,
-        "relations": [
-            "Symfony\\Component\\EventDispatcher",
-            "Shopware\\Elasticsearch\\Admin",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Event"
-        ]
-    },
-    {
         "name": "OpenSearch\\Common\\Exceptions",
         "size": 3000,
         "relations": []
     },
     {
-        "name": "Shopware\\Core\\Content\\Product\\Events",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\Filter",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\DataAbstractionLayer\\Doctrine",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Content\\Product\\SearchKeyword",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Content\\Product",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\System\\SalesChannel",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Routing",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Core\\Content\\Product\\DataAbstractionLayer",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\DependencyInjection\\Compiler",
+        "name": "Shopware\\Core\\Content",
         "size": 3000,
         "relations": []
     },
@@ -923,47 +557,52 @@
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\HttpKernel\\DataCollector",
+        "name": "Symfony\\Component\\HttpKernel",
         "size": 3000,
         "relations": []
     },
     {
-        "name": "Symfony\\Component\\Config\\Definition",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\Config\\Definition\\Builder",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Symfony\\Component\\DependencyInjection\\Extension",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Migration\\Traits",
+        "name": "Shopware\\Elasticsearch\\Migration",
         "size": 3000,
         "relations": [
-            "Doctrine\\DBAL"
-        ]
-    },
-    {
-        "name": "Shopware\\Elasticsearch\\Migration\\V6_5",
-        "size": 3000,
-        "relations": [
-            "Shopware\\Core\\Framework\\Migration",
             "Doctrine\\DBAL",
-            "Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal"
+            "Shopware\\Core\\Framework"
         ]
-    },
-    {
-        "name": "Shopware\\Core\\Framework\\Migration",
-        "size": 3000,
-        "relations": []
     }
 ];
+
+
+    // Function to check if a string starts with any of the given prefixes
+    const disallowedPrefixes = [
+        'Symfony\\',
+        'Doctrine\\',
+        'Twig\\',
+        'global',
+    ];
+    const allowedPrefixes = [
+        'Swag\\',
+        'Shopware\\',
+    ];
+    var allowedString = function (s){
+        // return !disallowedPrefixes.some(prefix => s.startsWith(prefix));
+        return allowedPrefixes.some(prefix => s.startsWith(prefix));
+    }
+
+    function filterNodesByPrefixes(nodes) {
+        return nodes.filter(node => {
+            // Exclude not allowed names
+            if (!allowedString(node.name)) {
+                return false;
+            }
+
+            // Filter out relations that are not allowed
+            node.relations = node.relations.filter(relation => allowedString(relation));
+
+            return true; // Keep the node if its name doesn't match any prefix
+        });
+    }
+
+    relations = filterNodesByPrefixes(relations);
 
     /**
      * Thanks to http://bl.ocks.org/mbostock/raw/7607999/
